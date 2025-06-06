@@ -30,7 +30,7 @@ export default function LocalizacaoScreen() {
       await salvarEvento(novoEvento);
 
       Alert.alert("Sucesso", "Evento salvo com sucesso!");
-      navigation.goBack(); // ou redirecionar para próxima tela futuramente
+      navigation.goBack();
     } catch (error: any) {
       Alert.alert("Erro", error.message);
     }
