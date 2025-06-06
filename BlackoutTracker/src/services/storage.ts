@@ -1,7 +1,7 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { Evento } from '../types/Evento';
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { Evento } from "../types/Evento";
 
-const STORAGE_KEY = '@eventos';
+const STORAGE_KEY = "@eventos";
 
 export async function salvarEvento(evento: Evento) {
   const data = await AsyncStorage.getItem(STORAGE_KEY);
